@@ -1,11 +1,3 @@
-﻿window.addEventListener('load', () => {
-  setTimeout(() => {
-    const loader = document.getElementById('loader');
-    loader.classList.add('hidden');
-    setTimeout(() => loader.remove(), 700);
-  }, 2200);
-});
-
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 60) { navbar.classList.add('scrolled'); }

@@ -29,13 +29,6 @@ ul{list-style:none;}
 .btn--dark:hover{background:var(--clr-navy-light);transform:translateY(-2px);box-shadow:0 12px 40px rgba(13,27,62,0.4);}
 .btn--whatsapp{background:#25D366;color:var(--clr-white);}
 .btn--whatsapp:hover{background:#20b858;transform:translateY(-2px);box-shadow:0 12px 40px rgba(37,211,102,0.4);}
-#loader{position:fixed;inset:0;background:var(--clr-primary);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;transition:opacity 0.6s ease,visibility 0.6s ease;}
-#loader.hidden{opacity:0;visibility:hidden;}
-.loader-logo{width:180px;margin-bottom:32px;filter:invert(1);animation:loaderPulse 1.5s ease-in-out infinite;}
-.loader-bar{width:200px;height:2px;background:rgba(255,255,255,0.15);border-radius:2px;overflow:hidden;}
-.loader-bar-fill{height:100%;width:0%;background:var(--clr-accent);border-radius:2px;animation:loaderFill 2s ease-in-out forwards;}
-@keyframes loaderPulse{0%,100%{opacity:1}50%{opacity:0.5}}
-@keyframes loaderFill{0%{width:0%}100%{width:100%}}
 #navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:20px 0;transition:var(--transition);}
 #navbar.scrolled{background:rgba(10,10,10,0.96);backdrop-filter:blur(20px);padding:14px 0;box-shadow:0 4px 30px rgba(0,0,0,0.3);}
 .nav-container{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;}

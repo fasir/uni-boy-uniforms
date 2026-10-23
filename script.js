@@ -12,8 +12,9 @@ window.addEventListener('scroll', () => {
     const sectionTop = section.offsetTop - 120;
     if (window.scrollY >= sectionTop) current = section.id;
   });
+  if (!current) return;
   navLinks.forEach(link => {
-    link.classList.remove('active');
+    if (link.getAttribute('href').startsWith('#')) link.classList.remove('active');
     if (link.getAttribute('href') === '#' + current) link.classList.add('active');
   });
 });
@@ -147,7 +148,7 @@ function handleQuotationSubmit(e) {
   setTimeout(() => {
     window.open(waUrl, '_blank');
     document.getElementById('quotationForm').reset();
-    btn.innerHTML = '<i class="fas fa-paper-plane"></i>&nbsp; Submit Enquiry';
+    btn.innerHTML = '<i class="fas fa-paper-plane"></i>&nbsp; Continue to WhatsApp';
     btn.style.background = '';
     btn.style.color = '';
   }, 1200);
@@ -172,7 +173,7 @@ function handleContactSubmit(e) {
   setTimeout(() => {
     window.open(waUrl, '_blank');
     document.getElementById('contactForm').reset();
-    btn.innerHTML = '<i class="fas fa-paper-plane"></i>&nbsp; Send Message';
+    btn.innerHTML = '<i class="fas fa-paper-plane"></i>&nbsp; Send via WhatsApp';
     btn.style.background = '';
   }, 1200);
 }

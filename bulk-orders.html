@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulk Uniform Orders | Uni-Boy Uniforms</title>
+    <meta name="description"
+        content="Request a bulk uniform quotation from Uni-Boy Uniforms for schools, businesses and hospitality teams." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bulk-page">
+    <a href="https://wa.me/919876543210?text=Hello%20Uni-Boy%20Uniforms!" class="whatsapp-float" target="_blank"
+        rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i><span class="whatsapp-float-label">Chat with us!</span>
+    </a>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html#hero" class="nav-link" onclick="closeMobileNav()">Home</a>
+        <a href="about.html" class="nav-link" onclick="closeMobileNav()">About Us</a>
+        <a href="products.html" class="nav-link" onclick="closeMobileNav()">Products</a>
+        <a href="manufacturing.html" class="nav-link" onclick="closeMobileNav()">Manufacturing</a>
+        <a href="gallery.html" class="nav-link" onclick="closeMobileNav()">Gallery</a>
+        <a href="index.html#retail" class="nav-link" onclick="closeMobileNav()">Retail Store</a>
+        <a href="bulk-orders.html" class="nav-link active" aria-current="page" onclick="closeMobileNav()">Bulk Orders</a>
+        <a href="contact.html" class="nav-link nav-contact" onclick="closeMobileNav()">Contact</a>
+    </div>
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html#hero" class="nav-logo" aria-label="Uni-Boy Uniforms Home">
+                <img src="logo.png" alt="Uni-Boy Uniforms Logo" />
+            </a>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="manufacturing.html" class="nav-link">Manufacturing</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="index.html#retail" class="nav-link">Store</a></li>
+                <li><a href="bulk-orders.html" class="nav-link active" aria-current="page">Bulk Orders</a></li>
+                <li><a href="contact.html" class="nav-link nav-contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMobileNav()" aria-label="Toggle menu" role="button"
+                tabindex="0"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="bulk-page-hero" aria-labelledby="bulk-page-title">
+            <div class="bulk-page-hero-image" aria-hidden="true"></div>
+            <div class="bulk-page-hero-overlay" aria-hidden="true"></div>
+            <div class="container bulk-page-hero-content">
+                <div class="hero-eyebrow"><span class="hero-eyebrow-line"></span>Bulk uniform supply</div>
+                <h1 class="hero-title" id="bulk-page-title">Made to meet<br /><span class="accent">your needs.</span></h1>
+                <p class="hero-desc">Share your uniform requirements and our team will help plan a bulk order for your
+                    organisation.</p>
+                <a href="#quote" class="btn btn--primary">Request a quotation <i class="fas fa-arrow-down"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div class="bulk-page-hero-index" aria-hidden="true">UNIBOY / BULK ORDERS</div>
+        </section>
+
+        <section id="quote" class="bulk-quote-section" aria-labelledby="quote-title">
+            <div class="container">
+                <div class="bulk-quote-heading reveal">
+                    <div class="badge"><i class="fas fa-boxes" aria-hidden="true"></i> Start your order</div>
+                    <h2 class="section-title" id="quote-title">Tell us what your team needs.</h2>
+                    <p class="section-subtitle">Share a few details to start your quotation. Submitting the form opens
+                        WhatsApp with your enquiry ready to send.</p>
+                </div>
+                <div class="bulk-quote-layout">
+                    <aside class="bulk-quote-aside reveal">
+                        <div class="bulk-quote-image">
+                            <img src="images/factory_hero.jpg" alt="Uniforms being made at Uni-Boy" loading="lazy" />
+                            <span>Planned around your requirements</span>
+                        </div>
+                        <div class="bulk-process">
+                            <h3>What happens next</h3>
+                            <div class="bulk-process-step"><span>01</span><p>Tell us your category, quantity and needs.</p></div>
+                            <div class="bulk-process-step"><span>02</span><p>Discuss specifications and quotation with our team.</p></div>
+                            <div class="bulk-process-step"><span>03</span><p>Confirm details and plan production.</p></div>
+                        </div>
+                    </aside>
+                    <div class="quotation-form bulk-page-form reveal reveal-delay-2">
+                        <div class="form-title">Request a quotation</div>
+                        <div class="form-subtitle">Fields marked * are required.</div>
+                        <form id="quotationForm" onsubmit="handleQuotationSubmit(event)" novalidate>
+                            <div class="form-row">
+                                <div class="form-group"><label class="form-label" for="q-name">Your Name *</label><input
+                                        class="form-input" type="text" id="q-name" name="name"
+                                        placeholder="e.g. John Smith" required /></div>
+                                <div class="form-group"><label class="form-label" for="q-org">Organisation / School
+                                        *</label><input class="form-input" type="text" id="q-org" name="organisation"
+                                        placeholder="Organisation name" required /></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group"><label class="form-label" for="q-phone">Phone Number
+                                        *</label><input class="form-input" type="tel" id="q-phone" name="phone"
+                                        placeholder="+91 98765 43210" required /></div>
+                                <div class="form-group"><label class="form-label" for="q-email">Email Address</label><input
+                                        class="form-input" type="email" id="q-email" name="email"
+                                        placeholder="your@email.com" /></div>
+                            </div>
+                            <div class="form-group"><label class="form-label" for="q-category">Uniform Category
+                                    *</label><select class="form-select" id="q-category" name="category" required>
+                                    <option value="" disabled selected>Select a category</option>
+                                    <option value="educational">Educational Uniforms</option>
+                                    <option value="corporate">Corporate Uniforms</option>
+                                    <option value="hospitality">Hospitality Uniforms</option>
+                                    <option value="service">Service Sector Uniforms</option>
+                                    <option value="custom">Custom Requirement</option>
+                                </select></div>
+                            <div class="form-group"><label class="form-label" for="q-qty">Estimated Quantity
+                                    *</label><input class="form-input" type="number" id="q-qty" name="quantity"
+                                    placeholder="e.g. 500 pieces" min="1" required /></div>
+                            <div class="form-group"><label class="form-label" for="q-requirements">Requirements and
+                                    Specifications</label><textarea class="form-textarea" id="q-requirements"
+                                    name="requirements"
+                                    placeholder="Share preferred colours, design details or timelines."></textarea>
+                            </div>
+                            <button type="submit" class="form-submit" id="quotation-submit"><i
+                                    class="fas fa-paper-plane" aria-hidden="true"></i> Continue to WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container footer-bottom">
+            <p class="footer-copyright">Uni-Boy Uniforms <span>&middot;</span> Uniforms made with purpose.</p>
+            <a class="footer-bottom-link" href="index.html#hero">Back to home <i class="fas fa-arrow-up"
+                    aria-hidden="true"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

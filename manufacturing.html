@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uniform Manufacturing | Uni-Boy Uniforms</title>
+    <meta name="description"
+        content="Explore Uni-Boy Uniforms' in-house manufacturing approach, production capabilities and quality-focused process." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="manufacturing-page">
+    <a href="https://wa.me/919876543210?text=Hello%20Uni-Boy%20Uniforms!" class="whatsapp-float" target="_blank"
+        rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i><span class="whatsapp-float-label">Chat with us!</span>
+    </a>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html#hero" class="nav-link" onclick="closeMobileNav()">Home</a>
+        <a href="about.html" class="nav-link" onclick="closeMobileNav()">About Us</a>
+        <a href="products.html" class="nav-link" onclick="closeMobileNav()">Products</a>
+        <a href="manufacturing.html" class="nav-link active" aria-current="page" onclick="closeMobileNav()">Manufacturing</a>
+        <a href="gallery.html" class="nav-link" onclick="closeMobileNav()">Gallery</a>
+        <a href="index.html#retail" class="nav-link" onclick="closeMobileNav()">Retail Store</a>
+        <a href="bulk-orders.html" class="nav-link" onclick="closeMobileNav()">Bulk Orders</a>
+        <a href="contact.html" class="nav-link nav-contact" onclick="closeMobileNav()">Contact</a>
+    </div>
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html#hero" class="nav-logo" aria-label="Uni-Boy Uniforms Home">
+                <img src="logo.png" alt="Uni-Boy Uniforms Logo" />
+            </a>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="manufacturing.html" class="nav-link active" aria-current="page">Manufacturing</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="index.html#retail" class="nav-link">Store</a></li>
+                <li><a href="bulk-orders.html" class="nav-link">Bulk Orders</a></li>
+                <li><a href="contact.html" class="nav-link nav-contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMobileNav()" aria-label="Toggle menu" role="button"
+                tabindex="0"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="manufacturing-page-hero" aria-labelledby="manufacturing-page-title">
+            <div class="manufacturing-page-hero-image" aria-hidden="true"></div>
+            <div class="manufacturing-page-hero-overlay" aria-hidden="true"></div>
+            <div class="container manufacturing-page-hero-content">
+                <div class="hero-eyebrow"><span class="hero-eyebrow-line"></span>Made in-house</div>
+                <h1 class="hero-title" id="manufacturing-page-title">Crafted with care.<br /><span class="accent">Built to deliver.</span></h1>
+                <p class="hero-desc">From the first cut to the final stitch, our team makes dependable uniforms with
+                    the consistency large orders demand.</p>
+                <a href="#production" class="btn btn--primary">Explore our process <i class="fas fa-arrow-down"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div class="manufacturing-page-hero-index" aria-hidden="true">UNIBOY / PRODUCTION</div>
+        </section>
+
+        <section class="manufacturing-capacity-section" aria-labelledby="manufacturing-capacity-title">
+            <div class="container manufacturing-capacity-grid">
+                <div class="manufacturing-capacity-copy reveal">
+                    <div class="badge"><i class="fas fa-industry" aria-hidden="true"></i> Production capability</div>
+                    <h2 class="section-title" id="manufacturing-capacity-title">Ready for the needs of growing teams.</h2>
+                    <p class="section-subtitle">Our in-house production combines experienced specialists and a steady
+                        monthly output to support uniform programmes at scale.</p>
+                    <a href="bulk-orders.html" class="mfg-link">Discuss your production needs <i
+                            class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="manufacturing-capacity-stats reveal reveal-delay-2">
+                    <div class="manufacturing-capacity-stat">
+                        <span class="manufacturing-capacity-number">20K<span>+</span></span>
+                        <span class="manufacturing-capacity-label">Garments produced each month</span>
+                    </div>
+                    <div class="manufacturing-capacity-stat">
+                        <span class="manufacturing-capacity-number">100<span>+</span></span>
+                        <span class="manufacturing-capacity-label">Skilled production specialists</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="production" class="manufacturing-process-section" aria-labelledby="manufacturing-process-title">
+            <div class="container">
+                <div class="manufacturing-process-intro reveal">
+                    <div>
+                        <div class="badge"><i class="fas fa-scissors" aria-hidden="true"></i> How we work</div>
+                        <h2 class="section-title" id="manufacturing-process-title">A considered process.<br /><span>A dependable result.</span></h2>
+                    </div>
+                    <p class="section-subtitle">Every order is shaped around its requirements and moves through a clear
+                        production flow.</p>
+                </div>
+                <div class="manufacturing-process-layout">
+                    <div class="manufacturing-process-image reveal">
+                        <img src="images/factory_hero.jpg"
+                            alt="Uniforms being carefully assembled on the Uni-Boy production floor" loading="lazy" />
+                        <span><b>01</b> CUT / STITCH / FINISH</span>
+                    </div>
+                    <div class="manufacturing-process-list">
+                        <article class="manufacturing-process-step reveal">
+                            <span class="manufacturing-process-number">01</span>
+                            <div>
+                                <h3>Understand the brief</h3>
+                                <p>We discuss uniform categories, quantities and the specifications your team needs.</p>
+                            </div>
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </article>
+                        <article class="manufacturing-process-step reveal reveal-delay-1">
+                            <span class="manufacturing-process-number">02</span>
+                            <div>
+                                <h3>Prepare and produce</h3>
+                                <p>Production planning brings together the selected designs, materials and order scale.</p>
+                            </div>
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </article>
+                        <article class="manufacturing-process-step reveal reveal-delay-2">
+                            <span class="manufacturing-process-number">03</span>
+                            <div>
+                                <h3>Check and complete</h3>
+                                <p>Garments are checked and prepared to meet the agreed order requirements.</p>
+                            </div>
+                            <i class="fas fa-check" aria-hidden="true"></i>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="manufacturing-cta-section" aria-labelledby="manufacturing-cta-title">
+            <div class="container manufacturing-cta-inner reveal">
+                <div>
+                    <div class="badge"><i class="fas fa-boxes" aria-hidden="true"></i> Bulk uniform orders</div>
+                    <h2 class="section-title" id="manufacturing-cta-title">Planning uniforms for your organisation?</h2>
+                </div>
+                <a href="bulk-orders.html" class="btn btn--primary">Request a quote <i
+                        class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container footer-bottom">
+            <p class="footer-copyright">Uni-Boy Uniforms <span>&middot;</span> Uniforms made with purpose.</p>
+            <a class="footer-bottom-link" href="index.html#hero">Back to home <i class="fas fa-arrow-up"
+                    aria-hidden="true"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

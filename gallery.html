@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uniform Gallery | Uni-Boy Uniforms</title>
+    <meta name="description"
+        content="Explore uniform collections and production at Uni-Boy Uniforms for education, corporate, hospitality and service teams." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="gallery-page">
+    <a href="https://wa.me/919876543210?text=Hello%20Uni-Boy%20Uniforms!" class="whatsapp-float" target="_blank"
+        rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i><span class="whatsapp-float-label">Chat with us!</span>
+    </a>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html#hero" class="nav-link" onclick="closeMobileNav()">Home</a>
+        <a href="about.html" class="nav-link" onclick="closeMobileNav()">About Us</a>
+        <a href="products.html" class="nav-link" onclick="closeMobileNav()">Products</a>
+        <a href="manufacturing.html" class="nav-link" onclick="closeMobileNav()">Manufacturing</a>
+        <a href="gallery.html" class="nav-link active" aria-current="page" onclick="closeMobileNav()">Gallery</a>
+        <a href="index.html#retail" class="nav-link" onclick="closeMobileNav()">Retail Store</a>
+        <a href="bulk-orders.html" class="nav-link" onclick="closeMobileNav()">Bulk Orders</a>
+        <a href="contact.html" class="nav-link nav-contact" onclick="closeMobileNav()">Contact</a>
+    </div>
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html#hero" class="nav-logo" aria-label="Uni-Boy Uniforms Home">
+                <img src="logo.png" alt="Uni-Boy Uniforms Logo" />
+            </a>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="manufacturing.html" class="nav-link">Manufacturing</a></li>
+                <li><a href="gallery.html" class="nav-link active" aria-current="page">Gallery</a></li>
+                <li><a href="index.html#retail" class="nav-link">Store</a></li>
+                <li><a href="bulk-orders.html" class="nav-link">Bulk Orders</a></li>
+                <li><a href="contact.html" class="nav-link nav-contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMobileNav()" aria-label="Toggle menu" role="button"
+                tabindex="0"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="gallery-page-hero" aria-labelledby="gallery-page-title">
+            <div class="gallery-page-hero-image" aria-hidden="true"></div>
+            <div class="gallery-page-hero-overlay" aria-hidden="true"></div>
+            <div class="container gallery-page-hero-content">
+                <div class="hero-eyebrow"><span class="hero-eyebrow-line"></span>Selected work</div>
+                <h1 class="hero-title" id="gallery-page-title">Made to<br /><span class="accent">be seen.</span></h1>
+                <p class="hero-desc">A closer look at the collections, people and production behind Uni-Boy uniforms.</p>
+                <a href="#gallery" class="btn btn--primary">Explore the gallery <i class="fas fa-arrow-down"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div class="gallery-page-hero-index" aria-hidden="true">UNIBOY / SELECTED WORK</div>
+        </section>
+
+        <section id="gallery" class="section gallery-page-section" aria-labelledby="gallery-title">
+            <div class="container">
+                <div class="section-header gallery-heading reveal">
+                    <div>
+                        <div class="badge"><i class="fas fa-images" aria-hidden="true"></i> Our collections</div>
+                        <h2 class="section-title" id="gallery-title">Details that make a difference.</h2>
+                    </div>
+                    <p class="section-subtitle">Explore uniform collections across industries and get a glimpse of our
+                        in-house production and retail store.</p>
+                </div>
+                <div class="gallery-toolbar reveal">
+                    <div class="gallery-tabs" role="group" aria-label="Filter gallery by category">
+                        <button class="gallery-tab active" type="button" onclick="filterGallery('all', this)"
+                            aria-pressed="true">All work</button>
+                        <button class="gallery-tab" type="button" onclick="filterGallery('educational', this)"
+                            aria-pressed="false">Education</button>
+                        <button class="gallery-tab" type="button" onclick="filterGallery('corporate', this)"
+                            aria-pressed="false">Corporate</button>
+                        <button class="gallery-tab" type="button" onclick="filterGallery('hospitality', this)"
+                            aria-pressed="false">Hospitality</button>
+                        <button class="gallery-tab" type="button" onclick="filterGallery('service', this)"
+                            aria-pressed="false">Service</button>
+                    </div>
+                    <span class="gallery-count"><span>06</span> &nbsp; SELECTED PROJECTS</span>
+                </div>
+                <div class="gallery-grid reveal reveal-delay-1">
+                    <article class="gallery-item" data-category="educational">
+                        <img src="images/school_uniforms.jpg" alt="School uniform collection" loading="lazy" />
+                        <div class="gallery-overlay"><span class="gallery-item-category">Education</span>
+                            <h3 class="gallery-overlay-text">Uniforms for every school day</h3>
+                            <span class="gallery-item-index">01</span>
+                        </div>
+                    </article>
+                    <article class="gallery-item" data-category="corporate">
+                        <img src="images/corporate_uniforms.jpg" alt="Corporate uniform collection" loading="lazy" />
+                        <div class="gallery-overlay"><span class="gallery-item-category">Corporate</span>
+                            <h3 class="gallery-overlay-text">A sharper first impression</h3>
+                            <span class="gallery-item-index">02</span>
+                        </div>
+                    </article>
+                    <article class="gallery-item" data-category="hospitality">
+                        <img src="images/hospitality_uniforms.jpg" alt="Hospitality uniform collection" loading="lazy" />
+                        <div class="gallery-overlay"><span class="gallery-item-category">Hospitality</span>
+                            <h3 class="gallery-overlay-text">Made for the art of service</h3>
+                            <span class="gallery-item-index">03</span>
+                        </div>
+                    </article>
+                    <article class="gallery-item" data-category="service">
+                        <img src="images/service_uniforms.jpg" alt="Service sector uniforms" loading="lazy" />
+                        <div class="gallery-overlay"><span class="gallery-item-category">Service</span>
+                            <h3 class="gallery-overlay-text">Ready for the workday</h3>
+                            <span class="gallery-item-index">04</span>
+                        </div>
+                    </article>
+                    <article class="gallery-item" data-category="educational">
+                        <img src="images/factory_hero.jpg" alt="Uniform production at the manufacturing facility"
+                            loading="lazy" />
+                        <div class="gallery-overlay"><span class="gallery-item-category">Our process</span>
+                            <h3 class="gallery-overlay-text">Made with care, in-house</h3>
+                            <span class="gallery-item-index">05</span>
+                        </div>
+                    </article>
+                    <article class="gallery-item" data-category="corporate">
+                        <img src="images/retail_store.jpg" alt="Uniform collection displayed in the retail store"
+                            loading="lazy" />
+                        <div class="gallery-overlay"><span class="gallery-item-category">In store</span>
+                            <h3 class="gallery-overlay-text">See the collection up close</h3>
+                            <span class="gallery-item-index">06</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-page-cta" aria-labelledby="gallery-cta-title">
+            <div class="container gallery-page-cta-inner reveal">
+                <div>
+                    <div class="badge"><i class="fas fa-tshirt" aria-hidden="true"></i> Find your collection</div>
+                    <h2 class="section-title" id="gallery-cta-title">Need uniforms for your team?</h2>
+                </div>
+                <a href="products.html" class="btn btn--primary">View products <i class="fas fa-arrow-right"
+                        aria-hidden="true"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container footer-bottom">
+            <p class="footer-copyright">Uni-Boy Uniforms <span>&middot;</span> Uniforms made with purpose.</p>
+            <a class="footer-bottom-link" href="index.html#hero">Back to home <i class="fas fa-arrow-up"
+                    aria-hidden="true"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
